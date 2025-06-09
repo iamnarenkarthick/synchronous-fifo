@@ -58,20 +58,20 @@ $dumpvars(0, fifo_sync_tb);
 ```
 ---
 
-### 💻 Run with Icarus Verilog
+## 💻 Run with Icarus Verilog
 
 
-# Step 1: Compile the design and testbench
+## Step 1: Compile the design and testbench
 ```
 iverilog -o fifo_sim fifo_sync.v fifo_sync_tb.v
 ```
 
-# Step 2: Run the simulation
+## Step 2: Run the simulation
 ```
 vvp fifo_sim
 ```
 
-# Step 3: View the waveform in GTKWave
+## Step 3: View the waveform in GTKWave
 ```
 gtkwave fifo_sync_tb.vcd
 ```
