@@ -56,20 +56,3 @@ Make sure your testbench includes:
 $dumpfile("fifo_sync_tb.vcd");
 $dumpvars(0, fifo_sync_tb);
 
-### 💻 Run with Icarus Verilog
-
-```bash
-# Step 1: Compile the design and testbench
-iverilog -o fifo_sim fifo_sync.v fifo_sync_tb.v
-
-# Step 2: Run the simulation
-vvp fifo_sim
-
-# Step 3: View the waveform in GTKWave
-gtkwave fifo_sync_tb.vcd
-
-
-## 🧰 Dependencies
-
-- [Icarus Verilog](http://iverilog.icarus.com/) – Used for compiling and running the Verilog simulation.
-- [GTKWave](http://gtkwave.sourceforge.net/) – Used for viewing the waveform (`.vcd`) files generated during simulation.
