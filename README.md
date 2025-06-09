@@ -55,12 +55,12 @@ Make sure your testbench includes:
 ```verilog
 $dumpfile("fifo_sync_tb.vcd");
 $dumpvars(0, fifo_sync_tb);
-
+```
 ---
 
 ### 💻 Run with Icarus Verilog
 
-```bash
+
 # Step 1: Compile the design and testbench
 iverilog -o fifo_sim fifo_sync.v fifo_sync_tb.v
 
